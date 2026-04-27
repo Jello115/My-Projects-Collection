@@ -1,0 +1,17 @@
+create database if not exists scout_group;
+use scout_group;
+create table if not exists Members(id int auto_increment primary key, name varchar(20) not null, age int, position varchar(50));
+insert into Members(name, age, position) values ('Jalal Nasri',18,'Leader_Assistant'),('Taha Kayyal',16,'Scout'),('Karim Bsat',16,'Scout');
+select * from Members;
+select * from Members where age like 16;
+select * from Members where name like '%Taha%';
+update Members set position = 'Leader_Petrol' where id = 2;
+delete from Members where id = 3;
+insert into Members(name, age, position) value('Ziky Amoudi',14,'New_Member');
+alter table Members add column date_joined Date;
+update Members set date_joined = '2017-5-16' where id =1;
+update Members set date_joined = '2022-8-23' where id =2;
+update Members set date_joined = '2023-4-7' where id =3;
+update Members set date_joined = CURRENT_DATE() where id =4;
+Truncate table Members;
+select count(*) from Members;

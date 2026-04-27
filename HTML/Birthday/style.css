@@ -1,0 +1,347 @@
+:root {
+    --bg-color: #ced8df;
+    --card-bg: #fff9daea;
+    --text-color: rgba(66, 64, 64, 0.897);
+    --glow-color: rgb(78, 60, 0);
+    --shadow-color: rgba(0,0,0,0.1);
+    --cake-section: #ffffff;
+    --button-bg: #a86221e3;
+    --button-text: #ffffff;
+}
+
+[data-theme= "dark"] {
+    --bg-color: rgb(16, 30, 48);
+    --card-bg: rgba(247, 239, 166, 0.829);
+    --text-color: #2d3033;
+    --glow-color: #fff9daea;
+    --shadow-color: #fff9dac0;
+    --cake-section: #344e70;
+    --button-bg: #ced8df;
+    --button-text: rgb(37, 36, 36);
+}
+
+.theme-but {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    border-style: none;
+    border-radius: 12px;
+    padding: 10px;
+    color: var(--button-text);
+    font-weight: bold;
+    background-color: var(--button-bg);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-but:hover {
+    cursor: pointer;
+    border: 2px solid var(--glow-color);
+    box-shadow: 0 0 20px var(--shadow-color); 
+    transform: scale(1.02);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    position: relative;
+    background-color: var(--card-bg);
+    width: 500px;
+    height: 600px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+    border: 2px solid var(--glow-color);
+    box-shadow: 0 0 20px var(--shadow-color); 
+    transform: scale(1.02);
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;    
+    color: var(--text-color);
+}
+
+.cake-section {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    border-radius: 0 0 12px 12px;
+    background-color: var(--cake-section);
+    box-shadow: 0px -10px 16px rgba(0, 0, 0, 0.055);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+
+}
+
+.cake-section:hover {
+    box-shadow: 0 0 20px rgba(87, 66, 0, 0.562); 
+}
+
+.Plate {
+    position: absolute;
+    width: 300px;
+    height: 10px;
+    background-color: rgba(95, 94, 92, 0.842);
+    bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.1);
+}
+
+.layer1 {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    bottom: 20px;
+    background-color: chocolate;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 7px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.layer2 {
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    bottom: 70px;
+    background-color: rgb(255, 222, 198);
+    box-shadow: 7px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.layer3 {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    bottom: 80px;
+    background-color: chocolate;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 7px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.shadow {
+    position: absolute;
+    bottom: 20px;
+    left: 170px;
+    width: 20px;
+    height: 140px;
+    background-color: rgba(109, 56, 18, 0.13);
+    border-radius: 12px 0 0 5px;
+}
+
+#darker {
+    width: 6px;
+    height: 135px;
+}
+
+
+.Topping {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    bottom: 110px;
+    background-color: rgb(255, 222, 198);
+    border-radius: 12px 12px 0 0;
+}
+
+.candle1 {
+    position: absolute;
+    top: 44px;
+    left: 200px;
+    width: 8px;
+    height: 20px;
+    background-color: rgb(21, 147, 179);
+    border-radius: 2px;
+    box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.candle2 {
+    position: absolute;
+    top: 44px;
+    left: 240px;
+    width: 8px;
+    height: 20px;
+    background-color: rgb(21, 147, 179);
+    border-radius: 2px;
+    box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.candle3 {
+    position: absolute;
+    top: 44px;
+    left: 280px;
+    width: 8px;
+    height: 20px;
+    background-color: rgb(21, 147, 179);
+    border-radius: 2px;
+    box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.candle4 {
+    position: absolute;
+    top: 44px;
+    left: 320px;
+    width: 8px;
+    height: 20px;
+    background-color: rgb(21, 147, 179);
+    border-radius: 2px;
+    box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.fire1 {
+    position: absolute;
+    top: -10px;
+    left: -1px;
+    width: 10px;
+    height: 13px;
+    background-color: coral;
+    border-radius: 4px;
+    box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.fire2 {
+    position: absolute;
+    top: -10px;
+    left: -1px;
+    width: 10px;
+    height: 13px;
+    background-color: coral;
+    border-radius: 4px;
+    box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.fire3 {
+    position: absolute;
+    top: -10px;
+    left: -1px;
+    width: 10px;
+    height: 13px;
+    background-color: coral;
+    border-radius: 4px;
+    box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+.fire4 {
+    position: absolute;
+    top: -10px;
+    left: -1px;
+    width: 10px;
+    height: 13px;
+    background-color: coral;
+    border-radius: 4px;
+    box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.219);
+}
+
+/* .circle1 {
+    position: absolute;
+    bottom: -7px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px 25px 25px 20px;
+    background-color: rgb(255, 222, 198);
+}
+
+.circle2 {
+    position: absolute;
+    bottom: -7px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 22px;
+    background-color: rgb(255, 222, 198);
+}
+
+.circle3 {
+    position: absolute;
+    bottom: -6px;
+    left: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(255, 222, 198);
+}
+
+.circle4 {
+    position: absolute;
+    bottom: -8px;
+    left: 115px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(255, 222, 198);
+}
+
+.circle5 {
+    position: absolute;
+    bottom: -7px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px 25px 20px 25px;
+    background-color: rgb(255, 222, 198);
+}
+
+.decoration1 {
+    position: absolute;
+    width: 8px;
+    height: 18px;
+    transform: rotate(-45deg);
+    top: 7px;
+    left: 30px;
+    background-color: rgb(177, 35, 35);
+}
+
+.decoration2 {
+    position: absolute;
+    width: 8px;
+    height: 18px;
+    transform: rotate(45deg);
+    top: 27px;
+    left: 60px;
+    background-color: rgb(236, 197, 22);
+}
+
+.decoration3 {
+    position: absolute;
+    width: 8px;
+    height: 18px;
+    transform: rotate(-45deg);
+    top: 27px;
+    left: 120px;
+    background-color: rgb(22, 97, 236);
+}
+
+.decoration4 {
+    position: absolute;
+    width: 8px;
+    height: 18px;
+    transform: rotate(35deg);
+    top: 7px;
+    left: 95px;
+    background-color: rgb(115, 192, 14);
+}
+
+.decoration5 {
+    position: absolute;
+    width: 8px;
+    height: 18px;
+    transform: rotate(55deg);
+    top: 17px;
+    left: 160px;
+    background-color: rgb(247, 153, 13);
+} */
